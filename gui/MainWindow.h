@@ -1,0 +1,14 @@
+//
+// Created by Y on 2023/11/7.
+//
+
+#ifndef ONECLICKSTREAM_CPP_MAINWINDOW_H
+#define ONECLICKSTREAM_CPP_MAINWINDOW_H
+
+
+class MainWindow {
+
+};
+
+
+#endif //ONECLICKSTREAM_CPP_MAINWINDOW_H

@@ -24,6 +24,8 @@ Windows 10 & 11
 
 ## 第三方依赖
 
+[imgui](https://github.com/ocornut/imgui/releases/tag/v1.89.9)
+
 [webdriverxx](https://github.com/GermanAizek/webdriverxx)
 
 [OpenJDK](https://openjdk.java.net/)
