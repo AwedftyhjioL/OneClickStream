@@ -31,6 +31,46 @@
 *.out
 *.app
 
-# CLion generated files
-cmake-build-debug/
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# File-based project format:
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# CMake build folder (and others):
+cmake-build-*/
+
+# Custom
+.idea/**/la-components.xml
+
+# CLion specific
+.idea/misc.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/contentModel.xml
 

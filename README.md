@@ -2,7 +2,7 @@
 
 BiliBili快速开播工具
 
-## 支持平台
+## 操作系统
 
 Windows 10 & 11
 
@@ -29,3 +29,5 @@ Windows 10 & 11
 [OpenJDK](https://openjdk.java.net/)
 
 [Selenium server](https://selenium-release.storage.googleapis.com/index.html)
+
+[imgui](https://github.com/ocornut/imgui)
