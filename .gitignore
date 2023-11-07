@@ -73,4 +73,6 @@ cmake-build-*/
 .idea/modules.xml
 .idea/*.iml
 .idea/contentModel.xml
+.idea/vcs.xml
+
 
