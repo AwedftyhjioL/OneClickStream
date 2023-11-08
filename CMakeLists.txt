@@ -17,18 +17,20 @@ include_directories(${IMGUI_DIR})
 include_directories(${IMGUI_DIR}/backends)
 include_directories($ENV{DXSDK_DIR}/Include)
 
-set(MY_SOURCE_CODE
+set(SOURCE_CODE
         main.cpp
         gui/MainWindow.cpp
         gui/MainWindow.h
+        gui/ImguiDemo.cpp
+        gui/ImguiDemo.h
+        gui/ImguiWinHelper.cpp
+        gui/ImguiWinHelper.h
 )
 
-set(SOURCE_CODE
-        ${MY_SOURCE_CODE}
+add_executable(OneClickStream_CPP
+        ${SOURCE_CODE}
         ${IMGUI_SOURCES}
 )
-
-add_executable(OneClickStream_CPP ${SOURCE_CODE})
 
 target_link_libraries(OneClickStream_CPP d3d11 d3dcompiler dxgi dwmapi)
 target_link_libraries(OneClickStream_CPP User32.lib Gdi32.lib Shell32.lib)
