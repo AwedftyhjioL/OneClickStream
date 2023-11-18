@@ -24,4 +24,4 @@ Windows 10 & 11
 
 ## 第三方依赖
 
-待定
+wxWidgets v3.2.4
