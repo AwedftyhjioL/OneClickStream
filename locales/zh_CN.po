@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OneClickStream-CPP\n"
+"POT-Creation-Date: 2023-11-19 22:11+0800\n"
+"PO-Revision-Date: 2023-11-19 22:12+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cmake-build-debug\n"
+"X-Poedit-SearchPathExcluded-1: cmake-build-release\n"
+"X-Poedit-SearchPathExcluded-2: extern\n"
+"X-Poedit-SearchPathExcluded-3: .idea\n"
+
+#: gui/MainFrame.cpp:25
+msgid "Load"
+msgstr "加载"
+
+#: gui/MainFrame.cpp:27
+msgid "Load Settings"
+msgstr "加载设置"
+
+#: gui/MainFrame.cpp:33
+msgid "Export"
+msgstr "导出"
+
+#: gui/MainFrame.cpp:35
+msgid "Export Settings"
+msgstr "导出设置"
+
+#: gui/MainFrame.cpp:41
+msgid "Settings"
+msgstr "设置"
+
+#: gui/MainFrame.cpp:44
+msgid "General"
+msgstr "通用"
+
+#: gui/MainFrame.cpp:48 gui/MainFrame.cpp:59
+msgid "Help"
+msgstr "帮助"
+
+#: gui/MainFrame.cpp:52
+msgid "Donate"
+msgstr "捐赠"
+
+#: gui/MainFrame.cpp:56
+msgid "About"
+msgstr "关于"
+
+#: gui/MainFrame.cpp:98
+msgid "Live Settings"
+msgstr "直播设置"
+
+#: gui/MainFrame.cpp:113
+msgid "Channel Category:"
+msgstr "直播分区："
+
+#: gui/MainFrame.cpp:132
+msgid "Channel Type:"
+msgstr "直播类别："
+
+#: gui/MainFrame.cpp:156
+msgid "Start Live"
+msgstr "开始直播"
+
+#: gui/MainFrame.h:54
+msgid "MainFrame"
+msgstr "主页面"

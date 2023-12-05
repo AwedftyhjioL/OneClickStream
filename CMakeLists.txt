@@ -23,7 +23,33 @@ message(STATUS "TARGET_RELEASE_DIR: ${TARGET_RELEASE_DIR}")
 
 add_subdirectory(extern/wxWidgets)
 
+option(USE_SYSTEM_GETTEXT "Use system-installed gettext instead of built-in" ON)
+if(USE_SYSTEM_GETTEXT)
+    find_package(Gettext)
+endif()
 
+if(NOT Gettext_FOUND OR NOT USE_SYSTEM_GETTEXT)
+    set(GETTEXT_INCLUDE_DIR "" CACHE PATH "Path to gettext include directory")
+    set(GETTEXT_LIBRARY "" CACHE FILEPATH "Path to gettext library file")
+
+    if(NOT GETTEXT_INCLUDE_DIR OR NOT GETTEXT_LIBRARY)
+        message(FATAL_ERROR "Gettext not found and no manual path specified")
+    endif()
+
+    if(NOT EXISTS "${GETTEXT_INCLUDE_DIR}")
+        message(FATAL_ERROR "The specified GETTEXT_INCLUDE_DIR does not exist")
+    endif()
+
+    if(NOT EXISTS "${GETTEXT_LIBRARY}")
+        message(FATAL_ERROR "The specified GETTEXT_LIBRARY does not exist")
+    endif()
+else()
+    set(GETTEXT_INCLUDE_DIR ${Gettext_INCLUDE_DIRS})
+    set(GETTEXT_LIBRARY ${Gettext_LIBRARIES})
+endif()
+
+include_directories(${GETTEXT_INCLUDE_DIR})
+link_libraries(${GETTEXT_LIBRARY})
 
 
 
@@ -38,6 +64,7 @@ set(SOURCE_CODE
 )
 
 set(RESOURCE_FILES
+        basic/enum.h
 
 )
 

@@ -19,9 +19,9 @@
 #include <wx/font.h>
 #include <wx/colour.h>
 #include <wx/settings.h>
+#include <wx/stattext.h>
 #include <wx/button.h>
 #include <wx/sizer.h>
-#include <wx/stattext.h>
 #include <wx/choice.h>
 #include <wx/frame.h>
 
@@ -41,8 +41,8 @@ class MainFrame : public wxFrame
 		wxMenu* m_menu_Load;
 		wxMenu* m_menu_export;
 		wxMenu* m_menu_help;
-		wxButton* m_button_language_option;
 		wxStaticText* m_staticText9;
+		wxButton* m_button_language_option;
 		wxStaticText* m_staticText6;
 		wxChoice* m_choice1;
 		wxStaticText* m_staticText7;

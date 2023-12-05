@@ -12,16 +12,22 @@
 #include <wx/wx.h>
 #endif
 
-
+#include "../basic/enum.h"
 
 class MainApp : public wxApp
 {
 public:
     virtual bool OnInit();
     
+    void Localize(Language l);
+    
     void ShowMainFrame(bool is_show);
     
     void InitializeAllImageHandlers();
+    
+    
+private:
+
 };
 
 

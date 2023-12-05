@@ -63,6 +63,16 @@ MainFrame::MainFrame( wxWindow* parent, wxWindowID id, const wxString& title, co
 	wxBoxSizer* bSizer6;
 	bSizer6 = new wxBoxSizer( wxVERTICAL );
 
+	m_staticText9 = new wxStaticText( this, wxID_ANY, _("Live Settings"), wxPoint( 0,0 ), wxSize( -1,30 ), 0 );
+	m_staticText9->Wrap( -1 );
+	m_staticText9->SetFont( wxFont( 14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, true, wxT("@悠哉字体") ) );
+	m_staticText9->SetForegroundColour( wxColour( 217, 217, 227 ) );
+	m_staticText9->SetBackgroundColour( wxColour( 52, 53, 65 ) );
+	m_staticText9->SetMinSize( wxSize( -1,30 ) );
+	m_staticText9->SetMaxSize( wxSize( -1,30 ) );
+
+	bSizer6->Add( m_staticText9, 0, wxALL, 5 );
+
 	wxBoxSizer* bSizer13;
 	bSizer13 = new wxBoxSizer( wxVERTICAL );
 
@@ -93,15 +103,7 @@ MainFrame::MainFrame( wxWindow* parent, wxWindowID id, const wxString& title, co
 	bSizer11 = new wxBoxSizer( wxVERTICAL );
 
 	wxBoxSizer* bSizer10;
-	bSizer10 = new wxBoxSizer( wxVERTICAL );
-
-	m_staticText9 = new wxStaticText( this, wxID_ANY, _("Live Settings"), wxDefaultPosition, wxDefaultSize, 0 );
-	m_staticText9->Wrap( -1 );
-	m_staticText9->SetFont( wxFont( 14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, wxT("@微软雅黑") ) );
-	m_staticText9->SetForegroundColour( wxColour( 217, 217, 227 ) );
-	m_staticText9->SetBackgroundColour( wxColour( 52, 53, 65 ) );
-
-	bSizer10->Add( m_staticText9, 0, wxALL, 5 );
+	bSizer10 = new wxBoxSizer( wxHORIZONTAL );
 
 
 	bSizer11->Add( bSizer10, 1, wxEXPAND, 5 );
@@ -129,7 +131,7 @@ MainFrame::MainFrame( wxWindow* parent, wxWindowID id, const wxString& title, co
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 
 	bSizer8->SetMinSize( wxSize( -1,40 ) );
-	m_staticText7 = new wxStaticText( this, wxID_ANY, _("Channel Name:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText7 = new wxStaticText( this, wxID_ANY, _("Channel Type:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText7->Wrap( -1 );
 	m_staticText7->SetFont( wxFont( 12, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, wxT("@微软雅黑") ) );
 	m_staticText7->SetForegroundColour( wxColour( 214, 214, 219 ) );
